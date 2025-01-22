@@ -61,6 +61,19 @@ To set up this configuration on your machine, follow these steps:
   Many basic things are taken from https://github.com/prasanthrangan/hyprdots but I like minimalistic stuff so I modified it. 
 
 ## Screenshots
+Desktop:
+![250122_16h44m56s_screenshot](https://github.com/user-attachments/assets/85a1257b-0c6c-4f7a-b469-a2e770715176)
+
+Browser:
+![250122_16h44m43s_screenshot](https://github.com/user-attachments/assets/50e57d2f-7fc1-4219-9ea7-ba7c549d5a08)
+
+Others:
+![250122_16h46m57s_screenshot](https://github.com/user-attachments/assets/4388916e-76ed-4e77-9e4f-83a9000561a8)
+![250122_16h49m26s_screenshot](https://github.com/user-attachments/assets/016ef0cb-3f51-401a-b33e-329bac7ce6cc)
+
+
+
+
 
   (To be updated)   
 
