@@ -1,0 +1,406 @@
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "SF Pro Rounded";
+    font-weight: bold;
+    font-size: 15px;
+    min-height: 15px;
+}
+
+@import "theme.css";
+
+window#waybar {
+    background: @bar-bg;
+}
+
+tooltip {
+    background: @main-bg;
+    color: @main-fg;
+    border-radius: 12px;
+    border-width: 0px;
+}
+
+#workspaces button {
+    box-shadow: none;
+	  text-shadow: none;
+    padding: 2px;
+    border: 2px;
+    border-color: #b4befe;
+    border-width: 5px;
+    border-radius: 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    color: @main-fg;
+    background-color: #b4befe;
+    animation: ws_normal 2s ease-in-out 1;
+}
+
+#workspaces button.active {
+    background: @wb-act-bg;
+    color: @wb-act-fg;
+    border-radius: 12px;
+    margin-left: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 4px;
+    animation: ws_active 2s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button:hover {
+    background: @wb-hvr-bg;
+    color: @wb-hvr-fg;
+    animation: ws_hover 20s ease-in-out 1;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button {
+    box-shadow: none;
+	text-shadow: none;
+    padding: 0px;
+    border-radius: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    color: @wb-color;
+    animation: tb_normal 0s ease-in-out 1;
+}
+
+#taskbar button.active {
+    background: @wb-act-bg;
+    color: @wb-act-color;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    animation: tb_active 0s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button:hover {
+    background: @wb-hvr-bg;
+    color: @wb-hvr-color;
+    animation: tb_hover 0s ease-in-out 1;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#tray menu * {
+    min-height: 18px
+}
+
+#tray menu separator {
+    min-height: 16px
+}
+
+#backlight,
+#battery,
+#bluetooth,
+#custom-cava,
+#custom-cliphist,
+#clock,
+#custom-cpuinfo,
+#cpu,
+#custom-github_hyprdots,
+#custom-gpuinfo,
+#idle_inhibitor,
+#custom-keybindhint,
+#language,
+#memory,
+#mpris,
+#network,
+#custom-notification,
+#custom-power,
+#privacy,
+#pulseaudio,
+#custom-spotify,
+#taskbar,
+#custom-theme,
+#custom-media,
+#tray,
+#custom-updates,
+#custom-wallchange,
+#custom-wbar,
+#window,
+#workspaces,
+#custom-l_end,
+#custom-r_end,
+#custom-sl_end,
+#custom-sr_end,
+#custom-rl_end,
+#custom-rr_end {
+    color: @main-fg;
+    background: @main-bg;
+    opacity: 1;
+    margin: 3px 0px 3px 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#workspaces {
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #b4befe;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-right: 5px;
+}
+
+#taskbar {
+    padding: 0px;
+}
+
+#backlight:hover {
+    background-color: #45475a;
+    color: #1B1923;
+}
+
+#window {
+    color: #F2CCCC;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #F2CCCC;
+    margin-right: 5px;
+}
+
+#clock {
+    color: #F38BA8;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-style: solid;
+    border-left-style: none;
+    border-left-width: 0px;
+    border-width: 2px;
+    border-color: #F38BA8;
+    margin-right: 5px;
+}
+
+#idle_inhibitor {
+    color: #313244;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-style: solid;
+    border-right-style: none;
+    border-width: 2px;
+    border-color: #F38BA8;
+    margin-right: 0px;
+}
+
+#cpu {
+    color: #313244;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-style: solid;
+    border-right-style: none;
+    border-width: 2px;
+    border-color: #cdd6f4;
+    margin-left: 5px;
+}
+
+#memory {
+    color: #313244;
+    border-radius: 0px;
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-width: 2px;
+    border-color: #cdd6f4;
+    margin-right: 0px;
+}
+
+#custom-cpuinfo {
+    color: #313244;
+    border-radius: 0px;
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-width: 2px;
+    border-color: #cdd6f4;
+    margin-right: 0px;
+}
+
+#network {
+    border-radius: 20px;
+    font-size: 16;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-style: solid;
+    border-left-style: none;
+    border-left-width: 0px;
+    border-width: 2px;
+    border-color: #cdd6f4;
+    margin-right: 5px;
+}
+
+#backlight {
+    color: #F5E0DC;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-style: solid;
+    border-right-style: none;
+    border-width: 2px;
+    border-color: #F5E0DC;
+    margin-left: 5px;
+}
+
+#pulseaudio {
+    color: #F5E0DC;
+    border-radius: 0px;
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-width: 2px;
+    border-color: #F5E0DC;
+    margin-right: 0px;
+}
+
+#custom-cliphist {    
+    color: #F5E0DC;
+    border-radius: 0px;
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-width: 2px;
+    border-color: #F5E0DC;
+    margin-right: 0px;
+}
+
+#custom-updates {
+    color: #F5E0DC;
+    font-size: 14;
+    border-radius: 0px;
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-width: 2px;
+    border-color: #F5E0DC;
+    margin-right: 0px;
+}
+
+#custom-keybindhint {
+    color: #F5E0DC;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-style: solid;
+    border-left-style: none;
+    border-left-width: 0px;
+    border-width: 2px;
+    border-color: #F5E0DC;
+    margin-right: 5px;
+}
+
+#tray {
+    color: #b4befe;
+    font-size: 18;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-style: solid;
+    border-right-style: none;
+    border-width: 2px;
+    border-color: #b4befe;
+    margin-left: 5px;
+    padding-left: 8px;
+}
+
+#tray menu {
+  color: #b4befe;
+}
+
+#tray > .passive {
+  color: #b4befe;
+}
+
+#tray > .active {
+  color: #b4befe;
+}
+
+#custom-notification {
+    border-radius: 0px;
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-width: 2px;
+    border-color: #b4befe;
+    margin-right: 0px;
+}
+
+#battery {
+    font-size: 16;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-style: solid;
+    border-left-style: none;
+    border-left-width: 0px;
+    border-width: 2px;
+    border-color: #b4befe;
+    margin-right: 5px;
+    padding-right: 8px;
+}
+
+#custom-power {
+  border-radius: 50px;
+  font-size: 18;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #F38BA8;
+  padding-left: 0px;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+
+#custom-r_end {
+    border-radius: 0px 20px 20px 0px;
+    margin-right: 2px;
+    padding-right: 5px;
+}
+
+#custom-l_end {
+    border-radius: 20px 0px 0px 20px;
+    margin-left: 2px;
+    padding-left: 5px;
+}
+
+#custom-sr_end {
+    border-radius: 12px;
+    margin-right: 8px;
+    padding-right: 0px;
+}
+
+#custom-sl_end {
+    border-radius: 12px;
+    margin-left: 8px;
+    padding-left: 0px;
+}
+
+#custom-rr_end {
+    border-radius: 0px 12px 12px 0px;
+    margin-right: 8px;
+    padding-right: 0px;
+}
+
+#custom-rl_end {
+    border-radius: 12px 0px 0px 12px;
+    margin-left: 8px;
+    padding-left: 0px;
+}
+
+#custom-media {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #b4befe 0%, #f3cdcd 100%);
+    color: black;
+    border-radius: 20px;
+    margin-right: 5px;
+}

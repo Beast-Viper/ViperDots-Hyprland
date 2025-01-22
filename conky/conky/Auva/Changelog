@@ -1,0 +1,49 @@
+Changelog
+------------------------------
+Auva Dark - Conky Theme
+[ Scorpio Themes Pack ] 
+
+by Closebox73
+
+Social
+X			: https://twitter.com/closebox73
+Discord		: https://discord.com/users/1115644269802311750
+Pling		: https://pling.com/u/closebox73x
+Mastodon	: https://mastodon.social/@closebox73
+------------------------------
+
+v2.8
+date : 27 Nov 2024
+-	Add line draw_blended in conky config due transparent image issue in Gnome & KDE
+-	Little addition to the color changer script
+-	Add donation link
+-	Some minor change
+
+
+v2.5
+date : 08 Oct 2023
+-	Some minor change
+
+
+v2.3
+date : 20 Apr 2023
+-	New Weather.sh 
+- 	Add Fahrenheit Variant
+-	Add override_utf8_locale line
+- 	Edit a few lines script
+
+
+v2.0
+date : 02 Sep 2022
+- 	Add script to change accent color
+
+	execute this command
+	$ cd ~/.config/conky/Auva
+	$ ./change-color.sh hex-code
+
+- 	Edit a few lines script
+
+
+v1.0
+date : 22 Apr 2022
+-	Initial release
