@@ -1,6 +1,6 @@
 # My Hyprland Setup
 
-This repository contains my personal configuration files for Hyprland, a dynamic tiling window manager for Linux. The configurations are managed using GNU Stow for easy symlink management.
+This repository contains my personal configuration files for Hyprland, a dynamic tiling window manager for Linux. I've aimed for a clean, minimalistic setup, perfect for those who appreciate efficiency and a distraction-free workspace. These configurations are managed using GNU Stow for easy symlink management.
 
 ## Table of Contents
 
@@ -13,7 +13,7 @@ This repository contains my personal configuration files for Hyprland, a dynamic
 
 ## Installation
 
-To set up this configuration on your machine, follow these steps:
+Setting up this configuration is a breeze! Just follow these steps:
 
 1. **Clone the repository:**
    ```bash
@@ -23,7 +23,26 @@ To set up this configuration on your machine, follow these steps:
    ```bash
    cd ~/ViperDots-Hyprland
 
-3. **Use Stow to create symlinks:**
+3. **Install Dependencies (Choose ONE method):**
+
+   This step installs all the necessary programs.  Pick the method that suits your distro:
+
+   a) **AUR Helper (paru or yay - Arch Linux):**
+
+     ```bash
+     paru -S avizo btop conky easyeffects fastfetch fish hyprland hyprlock hypridle hyprsunset kitty nautilus nvim swaync waybar wlogout
+     ```
+
+   b) **pacman (Arch Linux):**
+
+     ```bash
+     sudo pacman -S avizo btop conky easyeffects fastfetch fish hyprland hyprlock hypridle hyprsunset kitty nautilus nvim swaync waybar wlogout
+     ```
+
+   c) **Your Distribution's Package Manager:**
+     Adapt the commands above to your package manager (apt, dnf, zypper, etc.).  You'll need to find the correct package names for your distro.
+
+4. **Use Stow to create symlinks:**
    ```bash
    stow --target=$HOME/.config avizo
    stow --target=$HOME/.config btop
@@ -41,17 +60,6 @@ To set up this configuration on your machine, follow these steps:
    stow --target=$HOME/.config waybar
    stow --target=$HOME/.config wlogout
 
-4. **Install all dependencies:**
-   a) AUR Helper (paru or yay): 
-   ```bash
-   paru -S avizo btop conky easyeffects fastfetch fish hyprland hyprlock hypridle hyprsunset kitty nautilus nvim swaync waybar wlogout 
-
-  OR:
-
-   b) pacman:
-   ```bash
-   sudo pacman -S avizo btop conky easyeffects fastfetch fish hyprland hyprlock hypridle hyprsunset kitty nautilus nvim swaync waybar wlogout
-```
 
 ## Usage
   Any display manager should work for starting Hyprland but SDDM is recommended.
