@@ -83,7 +83,7 @@ Others:
 ![250122_16h46m57s_screenshot](https://github.com/user-attachments/assets/4388916e-76ed-4e77-9e4f-83a9000561a8)
 ![250122_16h49m26s_screenshot](https://github.com/user-attachments/assets/016ef0cb-3f51-401a-b33e-329bac7ce6cc)
 
-## Customisation
+## Customization
 
 Feel free to tweak any of the configurations to fit your style! I’ve set things up to be as minimal as possible, but there’s always room for personal flair. 
 
