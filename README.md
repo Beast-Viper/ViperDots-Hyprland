@@ -15,6 +15,8 @@ This repository contains my personal configuration files for Hyprland, a dynamic
 
 Setting up this configuration is a breeze! Just follow these steps:
 
+IMPORTANT: Make sure you are not logged into Hyprland before running the script
+
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Beast-Viper/ViperDots-Hyprland.git ~/ViperDots-Hyprland
@@ -30,13 +32,13 @@ Setting up this configuration is a breeze! Just follow these steps:
    a) **AUR Helper (paru or yay - Arch Linux):**
 
      ```bash
-     paru -S avizo btop blueman conky easyeffects fastfetch fish hyprland hyprlock hypridle hyprsunset kitty nautilus nvim swaync waybar wlogout
+     paru -S avizo btop blueman bluez bluez-utils brightnessctl conky easyeffects fastfetch fish hyprland hyprlock hypridle hyprsunset kitty nautilus network-manager-applet nvim nwglook pactl pavucontrol qt5ct qt6ct swaync swww waybar wlogout
      ```
 
    b) **pacman (Arch Linux):**
 
      ```bash
-     sudo pacman -S avizo btop blueman conky easyeffects fastfetch fish hyprland hyprlock hypridle hyprsunset kitty nautilus nvim swaync waybar wlogout
+     sudo pacman -S avizo btop blueman bluez bluez-utils brightnessctl conky easyeffects fastfetch fish hyprland hyprlock hypridle hyprsunset kitty nautilus network-manager-applet nwglook nvim pactl pavucontrol qt5ct qt6ct swaync swww waybar wlogout
      ```
 
    c) **Your Distribution's Package Manager:**
@@ -74,10 +76,10 @@ A lot of the basics are inspired by https://github.com/prasanthrangan/hyprdots ,
 
 Here’s a peek at my setup:
 
-Desktop:
+Desktop w/ waybar:
 ![250122_16h44m56s_screenshot](https://github.com/user-attachments/assets/85a1257b-0c6c-4f7a-b469-a2e770715176)
 
-Browser:
+Browser (Zen w/ adaptive css):
 ![250122_16h44m43s_screenshot](https://github.com/user-attachments/assets/50e57d2f-7fc1-4219-9ea7-ba7c549d5a08)
 
 Others:
