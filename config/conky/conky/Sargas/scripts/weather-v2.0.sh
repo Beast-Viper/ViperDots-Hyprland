@@ -9,8 +9,7 @@
 city_id=1272648
 
 # replace with yours
-api_key=6cfc3b9ba4bc061453e110a35e4ae67e
-
+api_key=
 # choose between metric for Celcius or imperial for fahrenheit
 unit=metric
 
