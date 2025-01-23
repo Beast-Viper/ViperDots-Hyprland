@@ -8,6 +8,7 @@ This repository contains my personal configuration files for Hyprland, a dynamic
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Customization](#customization)
+- [Contributing](#contributing) 
 - [License](#license)
 
 ## Installation
@@ -92,6 +93,10 @@ Feel free to tweak any of the configurations to fit your style! I’ve set thing
 You can also find separate files for individual things such as animations, keybinds and others.
 
 GTK3/4 theme is a personal catppuccin-like modified version using https://github.com/vinceliuice/WhiteSur-gtk-theme as base.
+
+## Contributing
+
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
 
 ## License
 
