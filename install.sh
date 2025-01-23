@@ -23,7 +23,7 @@ done
 echo "All existing configurations have been backed up to $BACKUP_DIR."
 
 # Stow command to create symlinks
-cd ~/dotfiles/config || exit
+cd ~/ViperDots-Hyprland/config/ || exit
 
 for DIR in "${DIRS[@]}"; do
     echo "Stowing $DIR..."
