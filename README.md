@@ -8,7 +8,8 @@ This repository contains my personal configuration files for Hyprland, a dynamic
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Customization](#customization)
-- [Contributing](#contributing) 
+- [Contributing](#contributing)
+- [Acknowledgement](#acknowledgement)
 - [License](#license)
 
 ## Installation
@@ -88,6 +89,11 @@ GTK3/4 theme is a personal catppuccin-like modified version using https://github
 ## Contributing
 
 Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
+
+## Acknowledgement
+
+All wallpapers are made by Arseniy Chebynkin and his collegue.
+Artstation link: https://www.artstation.com/arsenixc
 
 ## License
 
