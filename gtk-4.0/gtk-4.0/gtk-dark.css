@@ -1,7 +1,0 @@
-@import url("resource:///org/gnome/theme/gtk-dark.css");
-
-/* Target Nautilus specifically */
-.nautilus-window {
-    box-shadow: none !important;
-}
-
