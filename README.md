@@ -15,8 +15,6 @@ This repository contains my personal configuration files for Hyprland, a dynamic
 
 Setting up this configuration is a breeze! Just follow these steps:
 
-IMPORTANT: Make sure you are not logged into Hyprland before running the script
-
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Beast-Viper/ViperDots-Hyprland.git ~/ViperDots-Hyprland
@@ -44,23 +42,14 @@ IMPORTANT: Make sure you are not logged into Hyprland before running the script
    c) **Your Distribution's Package Manager:**
      Adapt the commands above to your package manager (apt, dnf, zypper, etc.).  You'll need to find the correct package names for your distro.
 
-4. **Use Stow to create symlinks:**
+4. **Run the install script:**
+   
+   IMPORTANT: Make sure you are not logged into Hyprland before running the script else script will fail.
+
    ```bash
-   stow --target=$HOME/.config avizo
-   stow --target=$HOME/.config btop
-   stow --target=$HOME/.config conky
-   stow --target=$HOME/.config easyeffects
-   stow --target=$HOME/.config fastfetch
-   stow --target=$HOME/.config fish
-   stow --target=$HOME/.config gtk-3.0
-   stow --target=$HOME/.config gtk-4.0
-   stow --target=$HOME/.config hypr
-   stow --target=$HOME/.config hyprlauncher
-   stow --target=$HOME/.config kitty
-   stow --target=$HOME/.config nvim
-   stow --target=$HOME/.config swaync
-   stow --target=$HOME/.config waybar
-   stow --target=$HOME/.config wlogout
+   chmod +x install.sh          #Make it executable
+
+   ./install.sh                 #Run the script
 
 
 ## Usage
