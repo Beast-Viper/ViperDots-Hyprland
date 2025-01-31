@@ -1,3 +1,5 @@
 config/fish/fish/fish_variables
 config/nvim/nvim/lazy-lock.json
 config/hypr/hypr/animations.conf
+config/btop/btop/btop.log
+config/nvim/nvim/lazy-lock
