@@ -37,6 +37,7 @@
 
 
 	"modules-right": [
+    "custom/power-consumption",
     "backlight",
     "pulseaudio",
     "pulseaudio#microphone",
@@ -134,7 +135,7 @@
         "return-type": "json",
         "max-length": 50,
         "format-icons": {
-            "Gapless": " ",
+            "spotube": " ",
             "default": " "
     },
         "escape": true,
@@ -384,6 +385,14 @@
         "interval" : 86400, // once every day
         "tooltip": true
     },
+
+    "custom/power-consumption": {
+    "format": "{}",
+    "exec": "~/ViperDots-Hyprland/config/waybar/waybar/scripts/power-consumption.sh",
+    "interval": 1,
+    "return-type": "text"
+    },
+
 
     "custom/notification": {
         "escape": true,

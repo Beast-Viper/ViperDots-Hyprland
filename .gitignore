@@ -3,3 +3,4 @@ config/nvim/nvim/lazy-lock.json
 config/hypr/hypr/animations.conf
 config/btop/btop/btop.log
 config/nvim/nvim/lazy-lock
+config/conky/conky/Sargas/scripts/weather-v2.0.sh

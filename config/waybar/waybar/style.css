@@ -115,6 +115,7 @@ tooltip {
 #network,
 #custom-notification,
 #custom-power,
+#custom-power-consumption,
 #privacy,
 #pulseaudio,
 #custom-spotify,
@@ -361,6 +362,15 @@ tooltip {
   padding-right: 5px;
   margin-right: 5px;
 }
+
+#custom-power-consumption {
+  border-radius: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #E06C75;
+  color: #E06C75;
+}
+
 
 #custom-r_end {
     border-radius: 0px 20px 20px 0px;
