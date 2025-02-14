@@ -4,7 +4,7 @@ conky.config = {
 --  Created : 2022/Apr/22
 --  this theme is for conky version 1.10.8 or newer
 -- 
---  AUVA_DARK2
+--  AUVA_DARK
 --  ( A part of Scorpio Conky themes pack )
 --
 --  author  : Closebox73
@@ -15,40 +15,40 @@ conky.config = {
 --==============================================================================
 
 -- Size and Position settings --
-  alignment = 'bottom_right',
+  alignment = 'top_right',
   gap_x = 0,
-  gap_y = -170,
-  maximum_width = 10000,
-  minimum_height = 320,
-  minimum_width = 1910,
+  gap_y = 0,
+  maximum_width = 240,
+  minimum_height = 260,
+  minimum_width = 240,
   
 -- Text settings --
   use_xft = true,
-  font = 'Roboto:light:size=9',
+  font = 'Roboto:size=9',
   override_utf8_locale = true,
   
 -- Color Settings --
-  default_color = 'F2CCCC',
-  default_outline_color = '1e1e2e',
-  default_shade_color = '7a8bff',
-  color1 = 'FD5852',
+  default_color = 'white',
+  default_outline_color = 'black',
+  default_shade_color = 'black',
+  color1 = 'D71E6C',
   
 -- Window Settings --
   background = false,
   border_width = 1,
-  draw_blended = true,
+  draw_blended = false,
   draw_borders = false,
   draw_graph_borders = false,
-  draw_outline = true,
-  draw_shades = true,
+  draw_outline = false,
+  draw_shades = false,
   own_window = true,
   own_window_colour = '000000',
   own_window_class = 'Conky',
-  own_window_argb_visual = true,
+  own_window_argb_visual = false,
   own_window_type = 'desktop',
   own_window_transparent = true,
   own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
-  stippled_borders = 1,
+  stippled_borders = 0,
   
 -- Others --
   cpu_avg_samples = 2,
@@ -61,14 +61,13 @@ conky.config = {
   uppercase = false,
   use_spacer = 'none',
   show_graph_scale = false,
-  show_graph_range = false,
-  out_to_x = false,
-  out_to_wayland = true,
+  show_graph_range = false
 }
 
 conky.text = [[
-${offset 20}${voffset 0}${color}${font abnes:size=27}Hope your
-${offset 480}${voffset 0}${execi 600 ~/.config/conky/Auva/scripts/Greeting.sh}
-${offset 840}${voffset 0}is going well,
-${offset 1350}${voffset 0}${color1}${execi 1200 whoami}!
+${image ~/.config/conky/Auva/res/lines.png -s 160x160}\
+${image ~/.config/conky/Auva/res/bg.png -s 160x160 -p 80,110}\
+${offset 95}${voffset 110}${color0}${font Steelfish:bold:size=50}${time %d}.${font}
+${offset 95}${voffset 0}${color0}${font Roboto:bold:size=11}${time %^B}${font}
+${offset 95}${voffset 32}${color0}${font Roboto:bold:size=8}${time %^Y}${font}
 ]]
