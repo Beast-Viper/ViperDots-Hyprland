@@ -1,7 +1,7 @@
 {
     "output": {
         "autogain#0": {
-            "bypass": false,
+            "bypass": true,
             "input-gain": 0.0,
             "maximum-history": 6,
             "output-gain": 0.0,
@@ -24,15 +24,15 @@
         "convolver#0": {
             "autogain": true,
             "bypass": false,
-            "input-gain": 0.0,
+            "input-gain": -2.0,
             "ir-width": 200,
             "kernel-name": "Mine",
-            "output-gain": -1.0
+            "output-gain": -3.0
         },
         "equalizer#0": {
             "balance": 0.0,
             "bypass": false,
-            "input-gain": -2.3,
+            "input-gain": -1.4,
             "left": {
                 "band0": {
                     "frequency": 30.0,
@@ -189,10 +189,10 @@
             "dithering": "None",
             "external-sidechain": false,
             "gain-boost": false,
-            "input-gain": -1.5,
+            "input-gain": -2.5,
             "lookahead": 10.0,
-            "mode": "Herm Wide",
-            "output-gain": -2.1,
+            "mode": "Exp Wide",
+            "output-gain": -3.3,
             "oversampling": "Full x2(2L)",
             "release": 5.0,
             "sidechain-preamp": 0.0,
