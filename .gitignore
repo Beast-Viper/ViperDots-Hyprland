@@ -4,3 +4,4 @@ config/hypr/hypr/animations.conf
 config/btop/btop/btop.log
 config/nvim/nvim/lazy-lock
 config/conky/conky/Sargas/scripts/weather-v2.0.sh
+config/gtk-3.0/gtk-3.0/bookmarks

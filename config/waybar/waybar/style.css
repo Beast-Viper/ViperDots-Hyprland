@@ -154,11 +154,7 @@ tooltip {
 
 #taskbar {
     padding: 0px;
-}
-
-#backlight:hover {
-    background-color: #45475a;
-    color: #1B1923;
+    color: #b4befe;
 }
 
 #window {

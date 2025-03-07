@@ -379,15 +379,16 @@
     "custom/power": {
         "format": " <span foreground='#f38ba8'></span> ",
         "rotate": 0,
+        "tooltip": false,
         "exec": "echo ; echo  logout",
         "on-click": "logoutlaunch.sh 2",
         "on-click-right": "logoutlaunch.sh 1",
-        "interval" : 86400, // once every day
-        "tooltip": true
+        "interval" : 86400 // once every day
     },
 
     "custom/power-consumption": {
     "format": "{}",
+    "tooltip": false,
     "exec": "~/ViperDots-Hyprland/config/waybar/waybar/scripts/power-consumption.sh",
     "interval": 1,
     "return-type": "text"
