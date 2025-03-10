@@ -22,9 +22,9 @@
         },
         "blocklist": [],
         "convolver#0": {
-            "autogain": true,
+            "autogain": false,
             "bypass": false,
-            "input-gain": -2.0,
+            "input-gain": -4.5,
             "ir-width": 200,
             "kernel-name": "Mine",
             "output-gain": -3.0
@@ -80,7 +80,7 @@
                 },
                 "band4": {
                     "frequency": 5000.0,
-                    "gain": 3.47,
+                    "gain": 4.58,
                     "mode": "RLC (BT)",
                     "mute": false,
                     "q": 0.8,
@@ -142,7 +142,7 @@
                 },
                 "band4": {
                     "frequency": 5000.0,
-                    "gain": 3.47,
+                    "gain": 4.58,
                     "mode": "RLC (BT)",
                     "mute": false,
                     "q": 0.8,
@@ -155,7 +155,7 @@
             "split-channels": false
         },
         "exciter#0": {
-            "amount": 4.000000000000001,
+            "amount": 6.0,
             "blend": 0.0,
             "bypass": false,
             "ceil": 17000.0,

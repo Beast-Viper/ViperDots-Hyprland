@@ -415,12 +415,6 @@ popover.magnifier > contents, .osd {
   border-radius: 100%;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(1turn);
-  }
-}
-
 spinner {
   background: none;
   opacity: 0;
@@ -3916,10 +3910,6 @@ scale.vertical.fine-tune indicator {
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider {
-  transform: none;
-}
-
-scale.horizontal.marks-before:not(.marks-after) slider {
   margin: -10px;
   border-style: none;
   border-radius: 0;
@@ -3936,10 +3926,6 @@ scale.horizontal.marks-before:not(.marks-after) slider {
 scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
   margin: -7px;
   margin-top: -11px;
-}
-
-scale.horizontal.marks-before:not(.marks-after) slider {
-  transform: none;
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider:hover {
@@ -3961,10 +3947,6 @@ scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
   margin-top: -11px;
 }
 
-scale.horizontal.marks-before:not(.marks-after) slider {
-  transform: none;
-}
-
 scale.horizontal.marks-before:not(.marks-after) slider:active {
   margin: -10px;
   border-style: none;
@@ -3982,10 +3964,6 @@ scale.horizontal.marks-before:not(.marks-after) slider:active {
 scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
   margin: -7px;
   margin-top: -11px;
-}
-
-scale.horizontal.marks-before:not(.marks-after) slider {
-  transform: none;
 }
 
 scale.horizontal.marks-before:not(.marks-after) slider:disabled {
@@ -4008,10 +3986,6 @@ scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider {
-  transform: none;
-}
-
-scale.horizontal.marks-after:not(.marks-before) slider {
   margin: -10px;
   border-style: none;
   border-radius: 0;
@@ -4028,10 +4002,6 @@ scale.horizontal.marks-after:not(.marks-before) slider {
 scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
   margin: -7px;
   margin-bottom: -11px;
-}
-
-scale.horizontal.marks-after:not(.marks-before) slider {
-  transform: none;
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider:hover {
@@ -4053,10 +4023,6 @@ scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
   margin-bottom: -11px;
 }
 
-scale.horizontal.marks-after:not(.marks-before) slider {
-  transform: none;
-}
-
 scale.horizontal.marks-after:not(.marks-before) slider:active {
   margin: -10px;
   border-style: none;
@@ -4074,10 +4040,6 @@ scale.horizontal.marks-after:not(.marks-before) slider:active {
 scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
   margin: -7px;
   margin-bottom: -11px;
-}
-
-scale.horizontal.marks-after:not(.marks-before) slider {
-  transform: none;
 }
 
 scale.horizontal.marks-after:not(.marks-before) slider:disabled {
@@ -4100,10 +4062,6 @@ scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
 }
 
 scale.vertical.marks-before:not(.marks-after) slider {
-  transform: none;
-}
-
-scale.vertical.marks-before:not(.marks-after) slider {
   margin: -10px;
   border-style: none;
   border-radius: 0;
@@ -4120,10 +4078,6 @@ scale.vertical.marks-before:not(.marks-after) slider {
 scale.vertical.marks-before:not(.marks-after).fine-tune slider {
   margin: -7px;
   margin-left: -11px;
-}
-
-scale.vertical.marks-before:not(.marks-after) slider {
-  transform: none;
 }
 
 scale.vertical.marks-before:not(.marks-after) slider:hover {
@@ -4145,10 +4099,6 @@ scale.vertical.marks-before:not(.marks-after).fine-tune slider {
   margin-left: -11px;
 }
 
-scale.vertical.marks-before:not(.marks-after) slider {
-  transform: none;
-}
-
 scale.vertical.marks-before:not(.marks-after) slider:active {
   margin: -10px;
   border-style: none;
@@ -4166,10 +4116,6 @@ scale.vertical.marks-before:not(.marks-after) slider:active {
 scale.vertical.marks-before:not(.marks-after).fine-tune slider {
   margin: -7px;
   margin-left: -11px;
-}
-
-scale.vertical.marks-before:not(.marks-after) slider {
-  transform: none;
 }
 
 scale.vertical.marks-before:not(.marks-after) slider:disabled {
@@ -4192,10 +4138,6 @@ scale.vertical.marks-before:not(.marks-after).fine-tune slider {
 }
 
 scale.vertical.marks-after:not(.marks-before) slider {
-  transform: none;
-}
-
-scale.vertical.marks-after:not(.marks-before) slider {
   margin: -10px;
   border-style: none;
   border-radius: 0;
@@ -4212,10 +4154,6 @@ scale.vertical.marks-after:not(.marks-before) slider {
 scale.vertical.marks-after:not(.marks-before).fine-tune slider {
   margin: -7px;
   margin-right: -11px;
-}
-
-scale.vertical.marks-after:not(.marks-before) slider {
-  transform: none;
 }
 
 scale.vertical.marks-after:not(.marks-before) slider:hover {
@@ -4237,10 +4175,6 @@ scale.vertical.marks-after:not(.marks-before).fine-tune slider {
   margin-right: -11px;
 }
 
-scale.vertical.marks-after:not(.marks-before) slider {
-  transform: none;
-}
-
 scale.vertical.marks-after:not(.marks-before) slider:active {
   margin: -10px;
   border-style: none;
@@ -4258,10 +4192,6 @@ scale.vertical.marks-after:not(.marks-before) slider:active {
 scale.vertical.marks-after:not(.marks-before).fine-tune slider {
   margin: -7px;
   margin-right: -11px;
-}
-
-scale.vertical.marks-after:not(.marks-before) slider {
-  transform: none;
 }
 
 scale.vertical.marks-after:not(.marks-before) slider:disabled {
@@ -4744,13 +4674,11 @@ columnview * row:hover{
 columnview * row:active{
 	background-color: alpha(@accent_color,0.8);
 	transition: all 0.3s;
-	transform: translateX(-1px) scale(0.9);
 }
 
 columnview * row:selected{
 	background-color: alpha(@accent_color,0.2);
 	transition: all 0.3s;
-	transform: translateX(0px);
 }
 
 columnview * row:selected:hover{
