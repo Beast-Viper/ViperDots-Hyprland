@@ -199,8 +199,8 @@
         "rotate": 0,
         "separate-outputs": true,
         "rewrite": {
-            "(.*)beastviper007@Infinix-Inbook-X1:(.*)": "$1  :$2",
-            "(.*)beastviper007:(.*)": "$1  :$2",
+            "(.*)beastviper007@Infinix-Inbook-X1:(.*)": "$1 :$2",
+            "(.*)beastviper007:(.*)": "$1 :$2",
             "(.*)beastviper007: nvim -(.*)": "$1 :$2",
             "(.*) — Mozilla Firefox": "$1 󰈹",
             "(.*) — Zen Browser": "$1 󰈹",
