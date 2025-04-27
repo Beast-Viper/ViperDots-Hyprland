@@ -3,7 +3,7 @@
     "$schema": "/etc/xdg/swaync/configSchema.json",
     "positionX": "right",
     "positionY": "bottom",
-    "layer": "top",
+    "layer": "bottom",
     "control-center-layer": "top",
     "layer-shell": true,
     "cssPriority": "application",

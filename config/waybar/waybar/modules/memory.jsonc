@@ -2,7 +2,7 @@
         "states": {
             "c": 90, // critical
             "h": 60, // high
-            "m": 30, // medium
+            "m": 30 // medium
         },
         "interval": 30,
         "format": "󰾆 {used}GB",
