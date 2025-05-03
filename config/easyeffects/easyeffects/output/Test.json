@@ -9,6 +9,17 @@
             "silence-threshold": -70.0,
             "target": -12.0
         },
+        "bass_enhancer#0": {
+            "amount": 3.0,
+            "blend": 0.0,
+            "bypass": false,
+            "floor": 20.0,
+            "floor-active": true,
+            "harmonics": 10.0,
+            "input-gain": 0.0,
+            "output-gain": 0.0,
+            "scope": 50.0
+        },
         "blocklist": [],
         "equalizer#0": {
             "balance": 0.0,
@@ -23,7 +34,7 @@
                     "q": 2.0,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell",
+                    "type": "Off",
                     "width": 4.0
                 },
                 "band1": {
@@ -34,7 +45,7 @@
                     "q": 0.8999999761581421,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell",
+                    "type": "Off",
                     "width": 4.0
                 },
                 "band2": {
@@ -61,7 +72,7 @@
                 },
                 "band4": {
                     "frequency": 660.0,
-                    "gain": 2.200000047683716,
+                    "gain": 7.31,
                     "mode": "APO (DR)",
                     "mute": false,
                     "q": 0.8999999761581421,
@@ -83,7 +94,7 @@
                 },
                 "band6": {
                     "frequency": 2700.0,
-                    "gain": 0.55,
+                    "gain": 2.01,
                     "mode": "APO (DR)",
                     "mute": false,
                     "q": 1.399999976158142,
@@ -94,7 +105,7 @@
                 },
                 "band7": {
                     "frequency": 6100.0,
-                    "gain": 6.4,
+                    "gain": 2.19,
                     "mode": "APO (DR)",
                     "mute": false,
                     "q": 2.0,
@@ -116,7 +127,7 @@
                 },
                 "band9": {
                     "frequency": 12000.0,
-                    "gain": 5.900000095367432,
+                    "gain": 5.9,
                     "mode": "APO (DR)",
                     "mute": false,
                     "q": 2.0,
@@ -128,7 +139,7 @@
             },
             "mode": "SPM",
             "num-bands": 10,
-            "output-gain": 4.5,
+            "output-gain": -0.8,
             "pitch-left": 0.0,
             "pitch-right": 0.0,
             "right": {
@@ -140,7 +151,7 @@
                     "q": 2.0,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell",
+                    "type": "Off",
                     "width": 4.0
                 },
                 "band1": {
@@ -151,7 +162,7 @@
                     "q": 0.8999999761581421,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell",
+                    "type": "Off",
                     "width": 4.0
                 },
                 "band2": {
@@ -178,7 +189,7 @@
                 },
                 "band4": {
                     "frequency": 660.0,
-                    "gain": 2.200000047683716,
+                    "gain": 7.31,
                     "mode": "APO (DR)",
                     "mute": false,
                     "q": 0.8999999761581421,
@@ -200,7 +211,7 @@
                 },
                 "band6": {
                     "frequency": 2700.0,
-                    "gain": 0.55,
+                    "gain": 2.01,
                     "mode": "APO (DR)",
                     "mute": false,
                     "q": 1.399999976158142,
@@ -211,7 +222,7 @@
                 },
                 "band7": {
                     "frequency": 6100.0,
-                    "gain": 6.4,
+                    "gain": 2.19,
                     "mode": "APO (DR)",
                     "mute": false,
                     "q": 2.0,
@@ -233,7 +244,7 @@
                 },
                 "band9": {
                     "frequency": 12000.0,
-                    "gain": 5.900000095367432,
+                    "gain": 5.9,
                     "mode": "APO (DR)",
                     "mute": false,
                     "q": 2.0,
@@ -269,27 +280,28 @@
             "equalizer#0",
             "stereo_tools#0",
             "autogain#0",
+            "bass_enhancer#0",
             "limiter#0"
         ],
         "stereo_tools#0": {
             "balance-in": 0.0,
             "balance-out": 0.0,
-            "bypass": true,
+            "bypass": false,
             "delay": 0.0,
-            "input-gain": -3.4,
-            "middle-level": 4.0,
+            "input-gain": -6.5,
+            "middle-level": 0.0,
             "middle-panorama": 0.0,
             "mode": "LR > LR (Stereo Default)",
             "mutel": false,
             "muter": false,
-            "output-gain": -5.6,
+            "output-gain": 0.0,
             "phasel": false,
             "phaser": false,
             "sc-level": 1.0,
             "side-balance": 0.0,
             "side-level": 2.0,
             "softclip": true,
-            "stereo-base": 1.0,
+            "stereo-base": 0.0,
             "stereo-phase": 0.0
         }
     }
