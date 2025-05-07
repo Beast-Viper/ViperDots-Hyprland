@@ -8,7 +8,7 @@ BACKUP_DIR=~/config_backup
 mkdir -p "$BACKUP_DIR"
 
 # List of directories to manage
-DIRS=("avizo" "btop" "conky" "easyeffects" "eww" "fastfetch" "fish" "gtk-3.0" "gtk-4.0" "hypr" "hyprlauncher" "kitty" "nvim" "swaync" "waybar" "wlogout")
+DIRS=("avizo" "btop" "conky" "easyeffects" "fastfetch" "fish" "gtk-3.0" "gtk-4.0" "hypr" "kitty" "nvim" "swaync" "waybar" "wlogout")
 
 # Loop through each directory
 for DIR in "${DIRS[@]}"; do
