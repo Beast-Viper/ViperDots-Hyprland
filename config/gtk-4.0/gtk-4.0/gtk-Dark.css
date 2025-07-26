@@ -226,22 +226,28 @@ list > row button.image-button:not(.flat), modelbutton.flat {
   background-color: rgba(108, 112, 134, 0.5);
   border-color: rgba(108, 112, 134, 0.4);
 }
-
 .background {
-  color: #cdd6f4;
-  background-color: #1e1e2e;
+  color: @window_fg_color;
+  background-color: @window_bg_color;
 }
 
 .background.csd {
   border-radius: 12px;
 }
 
-.background.csd.maximized, .background.csd.tiled, .background.csd.fullscreen {
+.background.csd.maximized, .background.csd.tiled {
   border-radius: 12px;
+}
+.background.csd.fullscreen {
+  border-radius: 0 !important;
 }
 
 .background.solid-csd {
   border-radius: 0;
+}
+
+.fullscreen * {
+  border-radius: 0 !important;
 }
 
 dnd {
@@ -7697,15 +7703,40 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
   padding: 0;
 }
 
+.gtkstyle-fallback {
+  color: @window_fg_color;
+  background-color: @window_bg_color;
+}
+
+.gtkstyle-fallback:hover {
+  color: @window_fg_color;
+  background-color: shade(@window_bg_color, 1.1);
+}
+
+.gtkstyle-fallback:active {
+  color: @window_fg_color;
+  background-color: shade(@window_bg_color, 0.9);
+}
+
+.gtkstyle-fallback:disabled {
+  color: mix(@window_fg_color, @window_bg_color, 0.5);
+  background-color: mix(@window_bg_color, @view_bg_color, 0.4);
+}
+
+.gtkstyle-fallback:selected {
+  color: @accent_fg_color;
+  background-color: @accent_bg_color;
+}
+
 @define-color theme_fg_color #9399b2;
 @define-color theme_text_color currentColor;
-@define-color theme_bg_color #1e1d2d;
-@define-color theme_base_color #1e1e2e;
+@define-color theme_bg_color rgba(30, 30, 46, 0.8);
+@define-color theme_base_color rgba(30, 30, 46, 0.8)
 @define-color theme_selected_bg_color #b4befe;
 @define-color theme_selected_fg_color white;
 @define-color fg_color #b4befe;
 @define-color text_color currentColor;
-@define-color bg_color #181825;
+@define-color bg_color rgba(30, 30, 46, 0.8);
 @define-color base_color #1e1e2e;
 @define-color selected_bg_color #b4befe;
 @define-color selected_fg_color white;
@@ -7865,9 +7896,9 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 @define-color error_bg_color #f38ba8;
 @define-color error_fg_color white;
 @define-color error_color #ED5F5D;
-@define-color window_bg_color #1e1e2e;
-@define-color window_fg_color #b4befe;
-@define-color view_bg_color #1e1e2e;
+@define-color window_bg_color rgba(30, 30, 46, 1);
+@define-color window_fg_color #cdd4fe;
+@define-color view_bg_color rgba(30, 30, 46, 1);
 @define-color view_fg_color #b4befe;
 @define-color headerbar_bg_color #1e1e2e;
 @define-color headerbar_fg_color #b4befe;

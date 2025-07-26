@@ -3,11 +3,36 @@
 include current-theme.conf
 # END_KITTY_THEME
 
+editor nvim
+
+active_border_color #b4befe
+cursor #b4befe
+hide_window_decorations yes
+background_opacity 0.5
+dynamic_background_opacity yes
+allow_hyperlinks yes
+show_hyperlink_targets yes
+url_color #b4befe
+url_style curly
+shell_integration enabled
+focus_follows_mouse yes
+
+remember_window_size  no 
+initial_window_width  1080
+initial_window_height 960
+
+map ctrl+t new_window
+map ctrl+shift+n new_os_window
+map alt+q close_window
+map ctrl+] next_window
+map ctrl+[ previous_window
+map ctrl+equal change_font_size all +1.0
+map ctrl+minus change_font_size all -1.0
 
 # BEGIN_KITTY_FONTS
 font_size        13.0
-font_family      family="MesloLGS NF"
-bold_font        family='MesloLGS NF' style=Bold
+font_family      family='MesloLGS NF' style=Bold
+bold_font        family='MesloLGS NF' postscript_name=MesloLGS-NF-Bold
 italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
