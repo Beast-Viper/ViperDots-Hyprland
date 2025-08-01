@@ -239,7 +239,7 @@ list > row button.image-button:not(.flat), modelbutton.flat {
   border-radius: 12px;
 }
 .background.csd.fullscreen {
-  border-radius: 0 !important;
+  border-radius: 0 ;
 }
 
 .background.solid-csd {
@@ -247,7 +247,7 @@ list > row button.image-button:not(.flat), modelbutton.flat {
 }
 
 .fullscreen * {
-  border-radius: 0 !important;
+  border-radius: 0 ;
 }
 
 dnd {
@@ -5807,7 +5807,7 @@ statusbar {
 
 /* Target Nautilus specifically */
 .nautilus-window {
-    box-shadow: none !important;
+    box-shadow: none;
 }
 
 .nautilus-window headerbar > windowhandle > box {
@@ -7731,7 +7731,7 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 @define-color theme_fg_color #9399b2;
 @define-color theme_text_color currentColor;
 @define-color theme_bg_color rgba(30, 30, 46, 0.8);
-@define-color theme_base_color rgba(30, 30, 46, 0.8)
+@define-color theme_base_color rgba(30, 30, 46, 0.8);
 @define-color theme_selected_bg_color #b4befe;
 @define-color theme_selected_fg_color white;
 @define-color fg_color #b4befe;
