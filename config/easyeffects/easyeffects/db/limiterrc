@@ -1,0 +1,5 @@
+[soe][Limiter#0]
+gainBoost=false
+inputGain=-1
+lookahead=10
+mode=1
