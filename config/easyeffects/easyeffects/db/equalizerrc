@@ -111,13 +111,13 @@ band8Q=1.3662248359605178
 band9Type=0
 
 [soe][Equalizer#1]
-inputGain=-2
+inputGain=-3
 mode=3
 numBands=8
 
 [soe][Equalizer#1#left]
 band0Frequency=180
-band0Gain=2
+band0Gain=3
 band0Mode=6
 band0Q=0.8
 band0Slope=3
@@ -133,7 +133,7 @@ band17Type=0
 band18Type=0
 band19Type=0
 band1Frequency=460
-band1Gain=1
+band1Gain=0.5
 band1Mode=6
 band1Q=0.699999988079071
 band20Type=0
@@ -182,7 +182,7 @@ band9Type=0
 
 [soe][Equalizer#1#right]
 band0Frequency=180
-band0Gain=2
+band0Gain=3
 band0Mode=6
 band0Q=0.8
 band0Slope=3
@@ -198,7 +198,7 @@ band17Type=0
 band18Type=0
 band19Type=0
 band1Frequency=460
-band1Gain=1
+band1Gain=0.5
 band1Mode=6
 band1Q=0.699999988079071
 band20Type=0

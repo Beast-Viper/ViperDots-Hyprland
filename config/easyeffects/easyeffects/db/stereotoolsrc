@@ -1,4 +1,6 @@
 [soe][StereoTools#0]
 inputGain=-4
+mlev=0.5
 slev=2
+softclip=true
 wet=2

@@ -1,4 +1,5 @@
 [EffectsPipelines]
+processAllInputs=false
 useCubicVolumes=true
 
 [Spectrum]
@@ -8,18 +9,20 @@ spectrumColorTheme=purpleSeries
 inputDevice=alsa_input.pci-0000_00_1f.3.analog-stereo
 
 [StreamOutputs]
-blocklist=HALF-LIFE 2,effect_output.virtual-surround-7.1-hesuvi
+blocklist=HALF-LIFE 2,effect_output.virtual-surround-7.1-hesuvi,SDL Application,Wuthering Waves
 mostUsedPresets=KZ ZSN Pro 2
-outputDevice=alsa_output.pci-0000_00_1f.3.analog-stereo
+outputDevice=alsa_output.usb-TTGK_Technology_Co._Ltd_KM-HIFI-384KHZ-00.analog-stereo
 plugins=equalizer#1,stereo_tools#0,limiter#0,level_meter#0
 usedPresets=KZ ZSN Pro 2:4
 visiblePage=pluginsPage
-visiblePlugin=equalizer#1
+visiblePlugin=stereo_tools#0
+
+[Style]
+forceBreezeTheme=false
 
 [Window]
 autostartOnLogin=true
-height=1031
+height=1032
 lastLoadedOutputPreset=KZ ZSN Pro 2
 width=1908
 xdgGlobalShortcuts=true
-xdgGlobalShortcutsBound=true

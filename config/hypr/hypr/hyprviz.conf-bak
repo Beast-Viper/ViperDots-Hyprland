@@ -19,7 +19,3 @@ render {
 cursor {
     min_refresh_rate = 60
 }
-
-misc {
-    vrr = 3
-}
