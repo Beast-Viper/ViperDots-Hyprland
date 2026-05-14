@@ -2591,8 +2591,8 @@ headerbar menubutton,
 headerbar splitbutton,
 headerbar stackswitcher,
 headerbar separator:not(.sidebar) {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 headerbar menubutton > button,
@@ -7529,8 +7529,8 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .sidebar-pane:dir(ltr), .sidebar-pane:dir(ltr) banner > revealer > widget, .sidebar-pane.end:dir(rtl), .sidebar-pane.end:dir(rtl) banner > revealer > widget {
-  box-shadow: inset -1px 0 6px rgba(0, 0, 0, 0.08);
-  border-right: 1px solid #1e1e2e;
+  box-shadow: none;
+  border-right: 0px solid #1e1e2e;
 }
 
 .sidebar-pane:dir(rtl), .sidebar-pane:dir(rtl) banner > revealer > widget, .sidebar-pane.end:dir(ltr), .sidebar-pane.end:dir(ltr) banner > revealer > widget {

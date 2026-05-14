@@ -7,15 +7,21 @@ general {
 input {
 
     touchpad {
-        drag_3fg = 1
+        drag_3fg = 0
     }
 
 }
 
 render {
-    direct_scanout = Auto
+    direct_scanout = 2
+    new_render_scheduling = true
 }
 
 cursor {
     min_refresh_rate = 60
+    default_monitor = eDP-1
+}
+
+misc {
+    vrr = 3
 }
