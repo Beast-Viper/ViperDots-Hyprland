@@ -11,7 +11,7 @@ source "$scrDir/globalcontrol.sh"
 
 confDir="${XDG_CONFIG_HOME:-$HOME/.config}"
 keyconfDir="$confDir/hypr"
-kb_hint_conf=("$keyconfDir/hyprland.conf" "$keyconfDir/keybindings.conf" "$keyconfDir/userprefs.conf" )
+kb_hint_conf=("$keyconfDir/hyprland.lua" "$keyconfDir/keybindings.lua" "$keyconfDir/userprefs.lua" )
 tmpMapDir="/tmp"
 tmpMap="$tmpMapDir/hyde-keybinds.jq"
 keycodeFile="${hydeConfDir}/keycode.kb"
@@ -393,7 +393,10 @@ run_sel="$(echo "$run" | awk -F '!=!' '{gsub(/^ *| *$/, "", $5); if ($5 ~ /[[:sp
 #   echo "$run_sel" ; echo "$run_flg"
 
 #?
-RUN() { case "$(eval "hyprctl dispatch $run_sel")" in *"Not enough arguments"*) exec $0 ;; esac }
+RUN() {
+  local lua_cmd=$(echo "$run_sel" | awk '{print "\"\"" $1 "\"\", \"\"" substr($0, index($0,$2)) "\"\""}')
+  case "$(eval "hyprctl dispatch $lua_cmd")" in *"Not enough arguments"*) exec $0 ;; esac
+}
 
 #? If flag is repeat then repeat rofi if not then just execute once
 if [ -n "$run_sel" ] && [ "$(echo "$run_sel" | wc -l)" -eq 1 ]; then
