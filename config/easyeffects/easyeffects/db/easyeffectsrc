@@ -18,9 +18,9 @@ inputDevice=alsa_input.pci-0000_00_1f.3.analog-stereo
 [StreamOutputs]
 blocklist=HALF-LIFE 2,effect_output.virtual-surround-7.1-hesuvi,SDL Application,Wuthering Waves,Endfield.exe,Call of Duty: Infinite Warfare
 mostUsedPresets=KZ ZSN Pro 2,Perfect Speakers,EW300 PEQ,Testing,7Hz Divine
-outputDevice=alsa_output.pci-0000_00_1f.3.analog-stereo
-plugins=equalizer#0,equalizer#1,stereo_tools#0,limiter#0,level_meter#0
-usedPresets=Speakers:8,KZ ZSN Pro 2:57,Perfect Speakers:44,EW300 PEQ:16,Testing:14,7Hz Divine:8
+outputDevice=alsa_output.usb-FIIO_SNOWSKY_Melody-01.analog-stereo
+plugins=equalizer#1,stereo_tools#0,limiter#0,level_meter#0
+usedPresets=Speakers:8,KZ ZSN Pro 2:57,Perfect Speakers:44,EW300 PEQ:16,Testing:14,7Hz Divine:12
 visiblePage=pluginsPage
 visiblePlugin=stereo_tools#0
 
@@ -39,3 +39,4 @@ showTrayIcon=false
 visiblePipeWirePage=testSignalsPage
 width=1908
 xdgGlobalShortcuts=true
+xdgGlobalShortcutsBound=true

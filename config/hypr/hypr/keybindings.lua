@@ -8,7 +8,7 @@ local reverse = "grave"
 local key     = "Tab"
 
 local term    = "kitty"
-local editor  = "xed"
+local editor  = "kate"
 local file    = "nautilus"
 local browser = "zen-browser"
 

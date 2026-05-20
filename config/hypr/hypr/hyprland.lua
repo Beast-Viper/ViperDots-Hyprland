@@ -24,7 +24,6 @@ hl.monitor({
 ---- AUTOSTART ----
 -------------------
 hl.on("hyprland.start", function () 
-    hl.exec_cmd(scrPath .. "/resetxdgportal.sh")
     hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
     hl.exec_cmd("dbus-update-activation-environment --systemd --all")
     hl.exec_cmd("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
@@ -34,7 +33,6 @@ hl.on("hyprland.start", function ()
     hl.exec_cmd("wl-paste --type text --watch cliphist store")
     hl.exec_cmd("wl-paste --type image --watch cliphist store")
     hl.exec_cmd(scrPath .. "/batterynotify.sh")
-    hl.exec_cmd("easyeffects --gapplication-service")
     hl.exec_cmd("hypridle")
     hl.exec_cmd("avizo-service")
     hl.exec_cmd("hyprpm reload -n")
@@ -44,6 +42,8 @@ hl.on("hyprland.start", function ()
     hl.exec_cmd("conky -c ~/.config/conky/Auva/Auva2.conf")
     hl.exec_cmd("power-daemon-mgr daemon")
     hl.exec_cmd("qs -c overview")
+    hl.exec_cmd("sleep 2 && " .. scrPath .. "/resetxdgportal.sh")
+    hl.exec_cmd("sleep 2 && easyeffects --gapplication-service")
 end)
 
 -------------------------------
@@ -111,6 +111,7 @@ hl.config({
         enable_swallow = true,
         middle_click_paste = true,
         disable_hyprland_guiutils_check = false,
+        initial_workspace_tracking = 0,
     },
 
     xwayland = {
