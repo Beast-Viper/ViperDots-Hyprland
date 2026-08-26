@@ -34,6 +34,7 @@ hl.bind(mainMod .. " + TAB",        hl.dsp.exec_cmd("qs ipc -c overview call ove
 ---- APPLICATION SHORTCUTS ----
 -------------------------------
 hl.bind("XF86MenuKB",               hl.dsp.exec_cmd(term))
+hl.bind("CTRL + Insert",            hl.dsp.exec_cmd(term))
 hl.bind(mainMod .. " + E",          hl.dsp.exec_cmd(file))
 hl.bind(mainMod .. " + C",          hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + F",          hl.dsp.exec_cmd("prime-run " .. browser))

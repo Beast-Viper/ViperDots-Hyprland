@@ -46,6 +46,11 @@ hl.window_rule({ match = { class = "^(io.gitlab.theevilskeleton.Upscaler)$" }, o
 hl.window_rule({ match = { class = "^(com.github.unrud.VideoDownloader)$" }, opacity = "0.80 0.80" })
 hl.window_rule({ match = { class = "^(io.gitlab.adhami3310.Impression)$" }, opacity = "0.80 0.80", float = true })
 hl.window_rule({ match = { class = "^(io.github.flattool.Warehouse)$" }, opacity = "0.80 0.80" })
+hl.window_rule({
+    match = { class = "^(kitty)$" },
+               opacity = "0.85 0.85",
+               tag = "hyprglass_preset_clear"
+})
 
 -- Suppress events
 hl.window_rule({ match = { class = ".*" }, suppress_event = "maximize" }) 
@@ -109,5 +114,6 @@ hl.layer_rule({ match = { namespace = "logout_dialog" }, blur = true })
 hl.layer_rule({ match = { namespace = "waybar" }, blur = true, ignore_alpha = 0 })
 hl.layer_rule({ match = { namespace = "swaync-control-center" }, blur = true, ignore_alpha = 0 })
 hl.layer_rule({ match = { namespace = "swaync-notification-window" }, blur = true, ignore_alpha = 0 })
+hl.layer_rule({ match = { namespace = "quickshell:overview-blur" }, blur = true, ignore_alpha = 0.2 })
 
 hl.window_rule({ match = { xwayland = true }, no_blur = true })

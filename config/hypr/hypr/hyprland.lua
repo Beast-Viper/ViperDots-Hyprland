@@ -64,6 +64,14 @@ hl.env("GDK_SCALE", "1")
 ---- CONFIGURATION ----
 -----------------------
 hl.config({
+    decoration = {
+        blur = {
+            enabled = true,
+            size = 3,
+            passes = 2,
+        }
+    },
+
     general = {
         allow_tearing = true,
     },
